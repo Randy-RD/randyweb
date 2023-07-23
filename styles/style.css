@@ -128,7 +128,16 @@ body {
   background-position-y: 115%;
   z-index: -5;
   min-height: env(min-height);
-  viewport-fit: contain;
+  viewport-fit: cover;
+  }
+}
+
+/* Fix for Android devices with browser bar */
+@media screen and (orientation: portrait) {
+  @media screen and (max-width: 768px) {
+    body {
+      background-attachment: scroll;
+    }
   }
 }
 
