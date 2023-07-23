@@ -127,7 +127,7 @@ body {
   background-position-y: 115%;
   z-index: -5;
   min-height: env(min-height);
-  viewport-fit: cover;
+  viewport-fit: contain;
   }
 }
 
