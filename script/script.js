@@ -180,3 +180,23 @@ var observer = new IntersectionObserver(function(entries) {
 animateOnScrollElements.forEach(element => {
     observer.observe(element);
 });
+
+
+// JavaScript to adjust background position on scroll for Android devices
+
+// Check if the user agent is an Android device
+const isAndroid = /Android/i.test(navigator.userAgent);
+
+// Function to adjust background position
+function adjustBackgroundPosition() {
+  if (isAndroid) {
+    const scrollPosition = window.scrollY;
+    document.body.style.backgroundPosition = `top right ${scrollPosition}px`;
+  }
+}
+
+// Event listener to call the function on scroll
+window.addEventListener('scroll', adjustBackgroundPosition);
+
+// Call the function initially to set the background position
+adjustBackgroundPosition();
