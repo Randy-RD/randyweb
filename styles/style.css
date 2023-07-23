@@ -122,6 +122,7 @@ body {
     background-image: url(../Assets/backgroundColors1.png);
   background-repeat: no-repeat;
   background-size: 300px;
+  background-position: top right;
   background-attachment: fixed;
   background-position-x: -150px;
   background-position-y: 115%;
