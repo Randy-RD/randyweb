@@ -1952,6 +1952,7 @@ body {
     border-radius: 25px;
     font-size: 1.1rem;
     font-weight: 500;
+    color: black;
   }
 
   .experience-Span {
@@ -3715,7 +3716,7 @@ form {
     border: solid 3.5px rgb(192, 192, 192);
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1), 0px 8px 40px rgba(0, 0, 0, 0.1);
     grid-area: contact;
-    background-image: url(../Assets/OttawaGatineauWeb.png);
+    background-image: url(../Assets/ottawaGatineauWeb.png);
     background-size: cover;
     background-position: center;
   }
@@ -3803,7 +3804,7 @@ form {
       border: solid 3.5px rgb(192, 192, 192);
       box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1), 0px 8px 40px rgba(0, 0, 0, 0.1);
       grid-area: contact;
-      background-image: url(../Assets/OttawaGatineauWeb.png);
+      background-image: url(../Assets/ottawaGatineauWeb.png);
       background-size: cover;
       background-position: center;
     }
@@ -3900,7 +3901,7 @@ form {
     border: solid 3.5px rgb(192, 192, 192);
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1), 0px 8px 40px rgba(0, 0, 0, 0.1);
     grid-area: contact;
-    background-image: url(../Assets/OttawaGatineauWeb.png);
+    background-image: url(../Assets/ottawaGatineauWeb.png);
     background-size: cover;
     background-position: center;
   }
@@ -4306,6 +4307,10 @@ form {
     width: 120px;
     height: 120px;
   }
+
+  .testimonial-Avatar img {
+    z-index: 10;
+  }  
   
   .testimonial-Head {
     height: 100%;
