@@ -180,3 +180,11 @@ var observer = new IntersectionObserver(function(entries) {
 animateOnScrollElements.forEach(element => {
     observer.observe(element);
 });
+
+// ******** Background Image Load **************
+
+var img = new Image();
+img.src = '../Assets/backgroundColors1.png';
+img.onload = function() {
+    document.documentElement.style.backgroundImage = 'url(' + img.src + ')';
+}
