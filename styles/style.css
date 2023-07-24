@@ -38,6 +38,14 @@ html {
     background-image: none;
 }
 
+@media only screen and (min-width: 1367px) {
+
+  html {
+    background-image: none;
+  background-repeat: no-repeat;
+  }
+}
+
 /* *********** IPADS *********** */
 
 @media only screen and (min-width: 769px) and (max-width: 1366px) {
