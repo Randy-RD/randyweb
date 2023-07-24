@@ -35,56 +35,6 @@ html {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-    background-image: none;
-}
-
-@media only screen and (min-width: 1367px) {
-
-  html {
-    background-image: none;
-    background-size: 0px;
-  background-repeat: no-repeat;
-  }
-}
-
-/* *********** IPADS *********** */
-
-@media only screen and (min-width: 769px) and (max-width: 1366px) {
-
-  html {
-    background-image: url(../Assets/backgroundColors1.png);
-  background-repeat: no-repeat;
-  background-size: 500px;
-  background-attachment: fixed;
-  background-position-x: 115%;
-  background-position-y: -20%;
-  z-index: -5;
-  }
-}
-
-/* **************** Mobile ****************** */
-
-@media only screen and (max-width: 768px) {
-
-  html {
-    background-image: url(../Assets/backgroundColors1.png);
-  background-repeat: no-repeat;
-  background-size: 300px;
-  background-attachment: fixed;
-  background-position-x: 180px;
-  background-position-y: -20%;
-  z-index: -5;
-  min-height: env(min-height);
-  viewport-fit: cover;
-  background-attachment: fixed; /* Default: fixed for iOS and other devices */
-  }
-
-    /* Fix for Android devices with browser bar */
-@media only screen and (max-width: 768px) and (orientation: portrait) {
-  html {
-    background-attachment: scroll; /* Change attachment to scroll for Android devices */
-  }
-}
 }
 
 body {
@@ -107,64 +57,43 @@ body {
   "footer";
 }
 
-@media only screen and (min-width: 1367px) {
-
-  body {
-    background-image: none;
-  background-repeat: no-repeat;
-  }
-}
-
 /* *********** IPADS *********** */
 
-@media only screen and (min-width: 769px) and (max-width: 1366px) {
-
+@media only screen and (min-width: 767px) and (max-width: 1366px) {
   body {
-    background-image: url(../Assets/backgroundColors1.png);
-  background-repeat: no-repeat;
-  background-size: 500px;
-  background-attachment: fixed;
-  background-position-x: -150px;
-  background-position-y: 115%;
-  z-index: -5;
+    background-image: url(../Assets/mobileBackgroundColorSplash.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position-y: 50%;
+    z-index: -5;
   }
-  
 }
 
 /* **************** Mobile ****************** */
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 766px) {
   body {
     grid-template-areas: "hero"
-  "ignite"
-  "intro"
-  "igniteTwo"
-  "services"
-  "pricing"
-  "contact"
-  "testimonials"
-  "footer";
+    "ignite"
+    "intro"
+    "igniteTwo"
+    "services"
+    "pricing"
+    "contact"
+    "testimonials"
+    "footer";
   }
 
   body {
-    background-image: url(../Assets/backgroundColors1.png);
-  background-repeat: no-repeat;
-  background-size: 300px;
-  background-position: top right;
-  background-attachment: fixed;
-  background-position-x: -150px;
-  background-position-y: 115%;
-  z-index: -5;
-  min-height: env(min-height);
-  viewport-fit: cover;
-  background-attachment: fixed; /* Default: fixed for iOS and other devices */
-  }
-}
-
-/* Fix for Android devices with browser bar */
-@media only screen and (max-width: 768px) and (orientation: portrait) {
-  body {
-    background-attachment: scroll; /* Change attachment to scroll for Android devices */
+    background-image: url(../Assets/mobileBackgroundColorSplash.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    z-index: -5;
+    -webkit-background-size: cover; /* For iOS Safari */
+    -moz-background-size: cover; /* For older Firefox */
+    -o-background-size: cover; /* For older Opera */
   }
 }
 
