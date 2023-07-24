@@ -4062,9 +4062,9 @@ form {
 
 .testimonial-Avatar {
   position: absolute;
-  top: -60px;
+  top: 50px; /* Adjust as needed */
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, 0); /* Center horizontally */
   width: 120px;
   height: 120px;
   border-radius: 50%;
@@ -4083,7 +4083,7 @@ form {
   object-fit: cover;
   mask: url('avatar-mask.svg') center / contain no-repeat; /* SVG mask */
   position: absolute;
-  bottom: -10%;
+  top: 10px;
 }
 
 .testimonial-wrapper {
