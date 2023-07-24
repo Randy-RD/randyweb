@@ -4108,7 +4108,7 @@ form {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: white url('./Assets/thomHeadTestimonial.png') no-repeat center center / cover;
+  background: white;
   border: 3.2px solid black;
   z-index: 4;
   overflow: hidden; /* Ensure the image is clipped within the circle */
