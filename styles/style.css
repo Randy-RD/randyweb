@@ -4062,7 +4062,7 @@ form {
 
 .testimonial-Avatar {
   position: absolute;
-  top: -120px;
+  top: -60px;
   left: 50%;
   transform: translateX(-50%);
   width: 120px;
