@@ -106,6 +106,14 @@ body {
   "footer";
 }
 
+@media only screen and (min-width: 1367px) {
+
+  body {
+    background-image: none;
+  background-repeat: no-repeat;
+  }
+}
+
 /* *********** IPADS *********** */
 
 @media only screen and (min-width: 769px) and (max-width: 1366px) {
