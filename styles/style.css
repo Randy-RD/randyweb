@@ -67,6 +67,7 @@ body {
     background-size: cover;
     background-position-y: 50%;
     z-index: -5;
+    -webkit-background-clip: padding-box; /* For iOS Safari */
   }
 }
 
@@ -94,6 +95,7 @@ body {
     -webkit-background-size: cover; /* For iOS Safari */
     -moz-background-size: cover; /* For older Firefox */
     -o-background-size: cover; /* For older Opera */
+    -webkit-background-clip: padding-box; /* For iOS Safari */
   }
 }
 
@@ -1910,7 +1912,7 @@ body {
   .brownUnderline {
     height: 35px;
     position: absolute;
-    bottom: -8%;
+    bottom: -12%;
   }
 
   .expertise-Button {
