@@ -3555,7 +3555,7 @@ body {
   height: 110vh;
   width: 100%;
   grid-area: contact;
-  background-image: url(../Assets/OttawaGatineauWebDesign.png);
+  background-image: url(../Assets/ottawaGatineauWebDesign.png);
   background-size: cover;
   padding-bottom: 6%;
   z-index: 1;
@@ -3685,7 +3685,7 @@ form {
     border: solid 3.5px rgb(192, 192, 192);
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1), 0px 8px 40px rgba(0, 0, 0, 0.1);
     grid-area: contact;
-    background-image: url(../Assets/OttawaGatineauWeb.png);
+    background-image: url(../Assets/ottawaGatineauWeb.png);
     background-size: cover;
     background-position: center;
   }
@@ -3773,7 +3773,7 @@ form {
       border: solid 3.5px rgb(192, 192, 192);
       box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1), 0px 8px 40px rgba(0, 0, 0, 0.1);
       grid-area: contact;
-      background-image: url(../Assets/OttawaGatineauWeb.png);
+      background-image: url(../Assets/ottawaGatineauWeb.png);
       background-size: cover;
       background-position: center;
     }
@@ -3870,7 +3870,7 @@ form {
     border: solid 3.5px rgb(192, 192, 192);
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1), 0px 8px 40px rgba(0, 0, 0, 0.1);
     grid-area: contact;
-    background-image: url(../Assets/OttawaGatineauWeb.png);
+    background-image: url(../Assets/ottawaGatineauWeb.png);
     background-size: cover;
     background-position: center;
   }
@@ -4062,9 +4062,9 @@ form {
 
 .testimonial-Avatar {
   position: absolute;
-  top: 50px; /* Adjust as needed */
+  top: -60px;
   left: 50%;
-  transform: translate(-50%, 0); /* Center horizontally */
+  transform: translateX(-50%);
   width: 120px;
   height: 120px;
   border-radius: 50%;
@@ -4083,7 +4083,7 @@ form {
   object-fit: cover;
   mask: url('avatar-mask.svg') center / contain no-repeat; /* SVG mask */
   position: absolute;
-  top: 10px;
+  bottom: -10%;
 }
 
 .testimonial-wrapper {
