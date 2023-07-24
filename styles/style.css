@@ -64,25 +64,13 @@ html {
   background-position-x: 180px;
   background-position-y: -20%;
   z-index: -5;
-  min-height: env(min-height);
-  viewport-fit: cover;
-  background-attachment: fixed; /* Default: fixed for iOS and other devices */
   }
-
-    /* Fix for Android devices with browser bar */
-@media only screen and (max-width: 768px) and (orientation: portrait) {
-  html {
-    background-attachment: scroll; /* Change attachment to scroll for Android devices */
-  }
-}
-}
 
 body {
   width: 100%;
   height: 100%;
   margin: 0;
   padding: 0;
-  backface-visibility: hidden; /* Avoid flickering during scrolling */
   display: grid;
   font-family: 'Playfair Display', serif;
   grid-template-columns: repeat(1, 1fr);
@@ -137,9 +125,6 @@ body {
   background-position-x: -150px;
   background-position-y: 115%;
   z-index: -5;
-  min-height: env(min-height);
-  viewport-fit: cover;
-  background-attachment: fixed; /* Default: fixed for iOS and other devices */
   }
 }
 
