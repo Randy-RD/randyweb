@@ -305,7 +305,7 @@ body {
 /************************************ Mobile NAV BAR ****************************************/
 /*************************************************************************************/
 
-@media only screen and (max-width: 1366px) {
+@media only screen and (max-width: 768px) {
   body {
     overflow-x: hidden;
     position: relative;
@@ -321,7 +321,7 @@ body {
   }
 }
 
-@media only screen and (min-width: 1366px) {
+@media only screen and (min-width: 768px) {
 
   .mobileNav {
     display: none;
