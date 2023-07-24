@@ -42,6 +42,7 @@ html {
 
   html {
     background-image: none;
+    background-size: 0px;
   background-repeat: no-repeat;
   }
 }
