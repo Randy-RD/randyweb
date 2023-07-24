@@ -1298,11 +1298,12 @@ body {
     font-size: 2rem;
   }
   
-  .purpleUnderline {
-    height: 50px;
+ .purpleUnderline {
+    height: 60px;
     position: absolute;
-    right: 0%;
-    top: 75%;
+    right: 50%;
+    top: 100%;
+    transform: translate(50%, -50%);
   }
 
   .section-One-Flex {
@@ -1423,7 +1424,7 @@ body {
   .purpleUnderline {
     height: 25px;
     position: absolute;
-    right: 18%;
+    right: 50%;
     top: 70%;
     transform: translateX(50%);
   }
