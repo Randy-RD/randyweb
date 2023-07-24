@@ -40,43 +40,41 @@ html {
 /* *********** IPADS *********** */
 
 @media only screen and (min-width: 769px) and (max-width: 1366px) {
-  html::before {
-    content: "";
+
+  html {
     background-image: url(../Assets/backgroundColors1.png);
-    background-repeat: no-repeat;
-    background-size: 500px;
-    background-position: 115% -20%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
+  background-repeat: no-repeat;
+  background-size: 500px;
+  background-attachment: fixed;
+  background-position-x: 115%;
+  background-position-y: -20%;
+  z-index: -5;
   }
 }
 
 /* **************** Mobile ****************** */
 
 @media only screen and (max-width: 768px) {
-  html::before {
-    content: "";
+
+  html {
     background-image: url(../Assets/backgroundColors1.png);
-    background-repeat: no-repeat;
-    background-size: 300px;
-    background-position: 180px -20%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
+  background-repeat: no-repeat;
+  background-size: 300px;
+  background-attachment: fixed;
+  background-position-x: 180px;
+  background-position-y: -20%;
+  z-index: -5;
+  min-height: env(min-height);
+  viewport-fit: cover;
+  background-attachment: fixed; /* Default: fixed for iOS and other devices */
+  }
+
+    /* Fix for Android devices with browser bar */
+@media only screen and (max-width: 768px) and (orientation: portrait) {
+  html {
+    background-attachment: scroll; /* Change attachment to scroll for Android devices */
   }
 }
-
-@media only screen and (max-width: 768px) and (orientation: portrait) {
-  html::before {
-    position: absolute; /* Change position to absolute for Android devices */
-  }
 }
 
 body {
