@@ -63,7 +63,6 @@ body {
   body {
     background-image: url(../Assets/mobileBackgroundColorSplash.png);
     background-repeat: no-repeat;
-    background-attachment: fixed;
     background-size: cover;
     background-position-y: 50%;
     z-index: -5;
@@ -89,7 +88,6 @@ body {
   body {
     background-image: url(../Assets/mobileBackgroundColorSplash.png);
     background-repeat: no-repeat;
-    background-attachment: fixed;
     background-size: cover;
     z-index: -5;
     -webkit-background-size: cover; /* For iOS Safari */
@@ -98,7 +96,6 @@ body {
     -webkit-background-clip: padding-box; /* For iOS Safari */
   }
 }
-
 /******************************************
 /* Pre Loader
 /*******************************************/
