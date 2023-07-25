@@ -95,6 +95,24 @@ body {
     -o-background-size: cover; /* For older Opera */
     -webkit-background-clip: padding-box; /* For iOS Safari */
   }
+
+  /* Workaround for fixed background on iOS */
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    body::after {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url(../Assets/mobileBackgroundColorSplash.png);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      pointer-events: none;
+      z-index: -10;
+    }
+  }
 }
 /******************************************
 /* Pre Loader
