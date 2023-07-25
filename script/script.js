@@ -6,6 +6,12 @@ document.addEventListener('DOMContentLoaded', function() {
       loader.style.display = "none";
   });
 
+   // Check if the device is a mobile device
+  if (/Mobi|Android/i.test(navigator.userAgent)) {
+    var body = document.getElementsByTagName("body")[0];
+    body.style.backgroundAttachment = "fixed";
+  }
+
   // Scrolling Effect
   var navContainer = document.querySelector('.navContainer');
   var navLinks = document.querySelectorAll('.nav ul li a');
