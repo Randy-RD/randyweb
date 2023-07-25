@@ -4297,8 +4297,14 @@ form {
   }
 
   .testimonial-Avatar img {
-       
-  }
+  width: auto;
+  height: 100%;
+  object-fit: cover;
+  mask: url('avatar-mask.svg') center / contain no-repeat; /* SVG mask */
+  position: absolute;
+  bottom: -10%;
+  z-index: 5;
+}
   
   .testimonial-Head {
     height: 100%;
@@ -4501,49 +4507,6 @@ form {
     }
     
 }
-
-/* iOS-Specific CSS */
-@media only screen and (max-width: 767px) and (orientation: portrait) {
-  /* Target iOS devices in portrait mode (e.g., iPhones) */
-
-  /* Adjust the top position of the avatar to center it properly */
-  .testimonial-Avatar {
-    top: -45px;
-  }
-
-  /* Reduce the size of the avatar */
-  .testimonial-Avatar img {
-    width: 80px;
-    height: 80px;
-  }
-
-  /* Adjust the margin of the testimonial block wrapper to provide better spacing */
-  .testimonial-Block-Wrapper {
-    margin-top: 5%;
-  }
-}
-
-/* iOS-Specific CSS for iPad Pros 12.9" in landscape mode */
-@media only screen and (min-device-width: 1300px) and (max-device-width: 1366px) and (orientation: landscape) {
-  /* Target iPad Pros 12.9" in landscape mode */
-
-  /* Adjust the top position of the avatar to center it properly */
-  .testimonial-Avatar {
-    top: -50px;
-  }
-
-  /* Reduce the size of the avatar */
-  .testimonial-Avatar img {
-    width: 100px;
-    height: 100px;
-  }
-
-  /* Adjust the margin of the testimonial block wrapper to provide better spacing */
-  .testimonial-Block-Wrapper {
-    margin-top: 10%;
-  }
-}
-
 /*************************************************************************************/
 /************************************ Footer ****************************************/
 /*************************************************************************************/
