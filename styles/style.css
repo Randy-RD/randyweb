@@ -57,6 +57,14 @@ body {
   "footer";
 }
 
+/* **************** Mobile ****************** */
+@media only screen and (max-width: 1366px) {
+
+  /* Add smooth scrolling behavior */
+  html, body {
+    scroll-behavior: smooth;
+  }
+
 /* *********** IPADS *********** */
 
 @media only screen and (min-width: 767px) and (max-width: 1366px) {
