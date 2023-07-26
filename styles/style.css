@@ -4098,6 +4098,7 @@ form {
   background-image: url('../Assets/thomHeadTestimonial.jpg');
   /* Add the following background-size property to control how the background image is displayed */
   background-size: cover;
+  background-position-y: -10px;
 }
 
 .testimonial-wrapper {
