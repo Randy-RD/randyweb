@@ -4094,15 +4094,10 @@ form {
   border: 3.2px solid black;
   z-index: 4;
   overflow: hidden; /* Ensure the image is clipped within the circle */
-}
-
-.testimonial-Avatar img {
-  width: auto;
-  height: 100%;
-  object-fit: cover;
-  mask: url('avatar-mask.svg') center / contain no-repeat; /* SVG mask */
-  position: absolute;
-  bottom: -10%;
+  /* Add the following background-image property to set the image as the background */
+  background-image: url('../Assets/thomHeadTestimonial.jpg');
+  /* Add the following background-size property to control how the background image is displayed */
+  background-size: cover;
 }
 
 .testimonial-wrapper {
@@ -4295,16 +4290,6 @@ form {
     width: 120px;
     height: 120px;
   }
-
-  .testimonial-Avatar img {
-  width: auto;
-  height: 100%;
-  object-fit: cover;
-  mask: url('avatar-mask.svg') center / contain no-repeat; /* SVG mask */
-  position: absolute;
-  bottom: -10%;
-  z-index: 5;
-}
   
   .testimonial-Head {
     height: 100%;
