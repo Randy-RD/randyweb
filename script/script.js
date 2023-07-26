@@ -36,6 +36,12 @@ document.addEventListener('DOMContentLoaded', function() {
 //  ********** Mobile Nav **************
 
 $(document).ready(function() {
+  $("#menu a").on("click", function() {
+    $("#menuToggle input").prop("checked", false);
+  });
+});
+
+$(document).ready(function() {
   $("#menuToggle input").on("change", function() {
     if ($(this).is(":checked")) {
       $("#menu a.itemMobile li").each(function(index) {
@@ -45,15 +51,6 @@ $(document).ready(function() {
           "transform": "translateX(0)"
         });
       });
-
-      // Add event listener to close the navigation when clicking outside
-      $(document).on("click.menuClose", function(event) {
-        const target = $(event.target);
-        const menuToggle = $("#menuToggle");
-        if (!menuToggle.is(target) && menuToggle.has(target).length === 0) {
-          $("#menuToggle input").prop("checked", false);
-        }
-      });
     } else {
       $("#menu a.itemMobile li").each(function(index) {
         $(this).css({
@@ -62,9 +59,6 @@ $(document).ready(function() {
           "transform": "translateX(100px)"
         });
       });
-
-      // Remove the event listener when the navigation is closed
-      $(document).off("click.menuClose");
     }
   });
 
@@ -72,7 +66,6 @@ $(document).ready(function() {
     $("#menuToggle input").prop("checked", false);
   });
 });
-
 
   //   ***************** Services ********************
 
