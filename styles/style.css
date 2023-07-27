@@ -3785,7 +3785,7 @@ form {
   @media only screen and (max-width: 766px) {
     
     .contact-Section {
-      height: 100vh;
+      height: fit-content;
       width: 90%;
       margin: 25px auto 25px auto;
       border-radius: 40px;
@@ -3820,9 +3820,10 @@ form {
     }
     
     form {
-      height: 20%;
+      border: solid 3px blue;
+      height: auto;
       width: 120%;
-      position: absolute;
+      position: relative;
       top: 0;
       left: -10%;
       background: none;
