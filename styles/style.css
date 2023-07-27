@@ -3820,7 +3820,6 @@ form {
     }
     
     form {
-      border: solid 3px blue;
       height: auto;
       width: 120%;
       position: relative;
