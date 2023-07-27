@@ -3732,7 +3732,7 @@ form {
   }
   
   form {
-    height: 20%;
+    height: auto;
     width: 120%;
     position: absolute;
     top: 0;
@@ -3776,7 +3776,7 @@ form {
     border: solid 2px white;
     background: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
-    position: absolute;
+    position: relative;
   }
 }
 
@@ -3865,17 +3865,16 @@ form {
       border: solid 2px white;
       background: rgb(255, 255, 255);
       color: rgb(0, 0, 0);
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
+      position: relative;
+      left: auto;
+      transform: none;
     }
     
     .contactButton:hover {
       background: #d8f8f0;
-      position: absolute;
-      left: 50%;
-      transform: translate(-50%);
-      cursor: pointer;
+      position: relative;
+      left: auto;
+      transform: none;
     }
     
   }
@@ -3917,7 +3916,7 @@ form {
   }
   
   form {
-    height: 20%;
+    height: auto;
     width: 120%;
     position: absolute;
     top: 0;
@@ -3961,7 +3960,7 @@ form {
     border: solid 2px white;
     background: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
-    position: absolute;
+    position: relative;
   }
 }
 
