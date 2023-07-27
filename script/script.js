@@ -136,12 +136,6 @@ $(document).ready(function() {
 
   //   ***************** Contact Form ********************
 
-  $('input').on('focus', function() {
-    setTimeout(() => {
-        window.scrollTo(0, 0);
-    }, 1);
-});
-
 
   //   ***************** Testimonial ********************
 
