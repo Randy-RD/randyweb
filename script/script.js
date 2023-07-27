@@ -135,7 +135,18 @@ $(document).ready(function() {
   animateJobTitle();
 
   //   ***************** Contact Form ********************
+  
+// Find the textarea by its ID
+var messageField = document.getElementById('message');
 
+// Check if device width is less than or equal to 767px
+if (window.innerWidth <= 767) {
+    // Add an event listener for the focus event
+    messageField.addEventListener('focus', function(event) {
+        // Prevent the page from jumping when textarea receives focus
+        event.preventDefault();
+    }, false);
+}
 
   //   ***************** Testimonial ********************
 
