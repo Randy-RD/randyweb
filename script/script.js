@@ -136,23 +136,6 @@ $(document).ready(function() {
 
   //   ***************** Contact Form ********************
   
-window.addEventListener('DOMContentLoaded', (event) => {
-    // get the input element
-    var inputElement = document.querySelector('input[type="text"]'); // replace with the correct selector for your input field
-
-    // get the body element
-    var bodyElement = document.querySelector('body');
-
-    // add event listener for focus event
-    inputElement.addEventListener('focus', function() {
-        bodyElement.classList.add('fixed-position');
-    });
-
-    // add event listener for blur event
-    inputElement.addEventListener('blur', function() {
-        bodyElement.classList.remove('fixed-position');
-    });
-});
 
 // ******** Page animations **************
 
