@@ -136,20 +136,17 @@ $(document).ready(function() {
 
   //   ***************** Contact Form ********************
   
-let scrollPosition = 0;
+// select all your form fields
+const formFields = document.querySelectorAll('#name, #email, #phone, #message');
 
-function handleFocus(event) {
-  scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
-};
-
-['name', 'email', 'phone', 'message'].forEach((id) => {
-  document.getElementById(id).addEventListener('focus', handleFocus);
-});
-
-window.addEventListener('resize', (event) => {
-  if (['name', 'email', 'phone', 'message'].includes(document.activeElement.id)) {
-    window.scrollTo(0, scrollPosition);
-  }
+// for each field, when it's in focus, prevent body scroll
+formFields.forEach(field => {
+  field.addEventListener('focus', () => {
+    document.body.style.overflow = 'hidden';
+  });
+  field.addEventListener('blur', () => {
+    document.body.style.overflow = '';
+  });
 });
 
   //   ***************** Testimonial ********************
