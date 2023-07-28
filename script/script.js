@@ -136,6 +136,48 @@ $(document).ready(function() {
 
   //   ***************** Contact Form ********************
   
+// Find the textarea by its ID
+var messageField = document.getElementById('message');
+
+// Check if device width is less than or equal to 767px
+if (window.innerWidth <= 767) {
+    // Add an event listener for the focus event
+    messageField.addEventListener('focus', function(event) {
+        // Prevent the page from jumping when textarea receives focus
+        event.preventDefault();
+    }, false);
+}
+
+  //   ***************** Testimonial ********************
+
+  var imageContainer = document.querySelector('.testimonial-wrapper');
+  var button = document.querySelector('.toms-Website');
+  var image = document.querySelector('.testimonial-Image');
+
+  imageContainer.addEventListener('mouseenter', function() {
+      image.style.opacity = '0.7';
+      button.style.visibility = 'visible';
+  });
+
+  imageContainer.addEventListener('mouseleave', function() {
+      image.style.opacity = '1';
+      button.style.visibility = 'hidden';
+  });
+
+  // Smooth scrolling
+  navLinks.forEach(link => {
+      link.addEventListener('click', (event) => {
+          event.preventDefault();
+          const target = document.querySelector(link.getAttribute('href'));
+          target.scrollIntoView({ behavior: 'smooth' });
+      });
+  });
+
+  // Page load scroll to top
+  window.onload = function() {
+      window.scrollTo(0, 0);
+  }
+});
 
 // ******** Page animations **************
 
