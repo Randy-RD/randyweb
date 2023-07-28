@@ -136,45 +136,22 @@ $(document).ready(function() {
 
   //   ***************** Contact Form ********************
   
-// Set a CSS variable with the initial viewport height
-let vh = window.innerHeight * 0.01;
-document.documentElement.style.setProperty('--vh', `${vh}px`);
+window.addEventListener('DOMContentLoaded', (event) => {
+    // get the input element
+    var inputElement = document.querySelector('input[type="text"]'); // replace with the correct selector for your input field
 
-// Update the CSS variable when the window is resized
-window.addEventListener('resize', () => {
-  let vh = window.innerHeight * 0.01;
-  document.documentElement.style.setProperty('--vh', `${vh}px`);
-});
+    // get the body element
+    var bodyElement = document.querySelector('body');
 
-  //   ***************** Testimonial ********************
+    // add event listener for focus event
+    inputElement.addEventListener('focus', function() {
+        bodyElement.classList.add('fixed-position');
+    });
 
-  var imageContainer = document.querySelector('.testimonial-wrapper');
-  var button = document.querySelector('.toms-Website');
-  var image = document.querySelector('.testimonial-Image');
-
-  imageContainer.addEventListener('mouseenter', function() {
-      image.style.opacity = '0.7';
-      button.style.visibility = 'visible';
-  });
-
-  imageContainer.addEventListener('mouseleave', function() {
-      image.style.opacity = '1';
-      button.style.visibility = 'hidden';
-  });
-
-  // Smooth scrolling
-  navLinks.forEach(link => {
-      link.addEventListener('click', (event) => {
-          event.preventDefault();
-          const target = document.querySelector(link.getAttribute('href'));
-          target.scrollIntoView({ behavior: 'smooth' });
-      });
-  });
-
-  // Page load scroll to top
-  window.onload = function() {
-      window.scrollTo(0, 0);
-  }
+    // add event listener for blur event
+    inputElement.addEventListener('blur', function() {
+        bodyElement.classList.remove('fixed-position');
+    });
 });
 
 // ******** Page animations **************
