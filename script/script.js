@@ -136,24 +136,21 @@ $(document).ready(function() {
 
   //   ***************** Contact Form ********************
   
-const pageElement = document.querySelector('.contact-Section');
-    const inputElement = document.querySelector('input'); //This will select the first input field on the page
-    let scrollPosition = 0;
+let scrollPosition = 0;
 
-    // Check if it is a mobile device (screen width less than 768px)
-    if (window.innerWidth <= 768) {
-        inputElement.addEventListener('focus', () => {
-            scrollPosition = window.scrollY;
-            pageElement.style.transform = `translateY(-${scrollPosition}px)`;
-            pageElement.style.position = 'fixed';
-        });
+function handleFocus(event) {
+  scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+};
 
-        inputElement.addEventListener('blur', () => {
-            pageElement.style.transform = 'none';
-            pageElement.style.position = 'static';
-            window.scrollTo(0, scrollPosition);
-        });
-    }
+['name', 'email', 'phone', 'message'].forEach((id) => {
+  document.getElementById(id).addEventListener('focus', handleFocus);
+});
+
+window.addEventListener('resize', (event) => {
+  if (['name', 'email', 'phone', 'message'].includes(document.activeElement.id)) {
+    window.scrollTo(0, scrollPosition);
+  }
+});
 
   //   ***************** Testimonial ********************
 
