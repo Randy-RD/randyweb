@@ -136,17 +136,15 @@ $(document).ready(function() {
 
   //   ***************** Contact Form ********************
   
-// Find the textarea by its ID
-var messageField = document.getElementById('message');
+// Set a CSS variable with the initial viewport height
+let vh = window.innerHeight * 0.01;
+document.documentElement.style.setProperty('--vh', `${vh}px`);
 
-// Check if device width is less than or equal to 767px
-if (window.innerWidth <= 767) {
-    // Add an event listener for the focus event
-    messageField.addEventListener('focus', function(event) {
-        // Prevent the page from jumping when textarea receives focus
-        event.preventDefault();
-    }, false);
-}
+// Update the CSS variable when the window is resized
+window.addEventListener('resize', () => {
+  let vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty('--vh', `${vh}px`);
+});
 
   //   ***************** Testimonial ********************
 
