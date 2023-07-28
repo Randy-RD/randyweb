@@ -114,11 +114,6 @@ body {
       z-index: -10;
     }
   }
-    body.fixed-position {
-    position: fixed;
-    overflow-y: scroll;
-    width: 100%;
-}
 }
 /******************************************
 /* Pre Loader
