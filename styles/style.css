@@ -3795,7 +3795,6 @@ form {
       background-image: url(../Assets/ottawaGatineauWeb.png);
       background-size: cover;
       background-position: center;
-      transition: transform 0.3s ease-in-out;
     }
     
     .contact-Head-Wrapper {
