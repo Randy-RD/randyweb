@@ -136,17 +136,24 @@ $(document).ready(function() {
 
   //   ***************** Contact Form ********************
   
-// Find the textarea by its ID
-var messageField = document.getElementById('message');
+const pageElement = document.querySelector('.contact-Section');
+    const inputElement = document.querySelector('input'); //This will select the first input field on the page
+    let scrollPosition = 0;
 
-// Check if device width is less than or equal to 767px
-if (window.innerWidth <= 767) {
-    // Add an event listener for the focus event
-    messageField.addEventListener('focus', function(event) {
-        // Prevent the page from jumping when textarea receives focus
-        event.preventDefault();
-    }, false);
-}
+    // Check if it is a mobile device (screen width less than 768px)
+    if (window.innerWidth <= 768) {
+        inputElement.addEventListener('focus', () => {
+            scrollPosition = window.scrollY;
+            pageElement.style.transform = `translateY(-${scrollPosition}px)`;
+            pageElement.style.position = 'fixed';
+        });
+
+        inputElement.addEventListener('blur', () => {
+            pageElement.style.transform = 'none';
+            pageElement.style.position = 'static';
+            window.scrollTo(0, scrollPosition);
+        });
+    }
 
   //   ***************** Testimonial ********************
 
