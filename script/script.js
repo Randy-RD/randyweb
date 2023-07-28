@@ -139,15 +139,20 @@ $(document).ready(function() {
 // select all your form fields
 const formFields = document.querySelectorAll('#name, #email, #phone, #message');
 
-// for each field, when it's in focus, prevent body scroll
-formFields.forEach(field => {
-  field.addEventListener('focus', () => {
-    document.body.style.overflow = 'hidden';
+// check if the device width is less than or equal to 768px
+const isMobileOrIpad = window.innerWidth <= 768;
+
+if (isMobileOrIpad) {
+  // for each field, when it's in focus, prevent body scroll
+  formFields.forEach(field => {
+    field.addEventListener('focus', () => {
+      document.body.style.overflow = 'hidden';
+    });
+    field.addEventListener('blur', () => {
+      document.body.style.overflow = '';
+    });
   });
-  field.addEventListener('blur', () => {
-    document.body.style.overflow = '';
-  });
-});
+}
 
   //   ***************** Testimonial ********************
 
